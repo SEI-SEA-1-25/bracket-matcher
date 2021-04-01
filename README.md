@@ -50,7 +50,7 @@ bracket_matcher('a[bc(123)]')
 bracket_matcher('a[bc(12]3)')
 # returns false -- improperly nested
 
-bracket_matcher('a{b}{c(1[2]3)}')
+bracket_matcher('')
 # returns true
 
 bracket_matcher('a{b}{c(1}[2]3)')
