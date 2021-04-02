@@ -16,7 +16,7 @@ Write a Python function that takes a string input. This string represents code. 
 def bracket_matcher(input):
 ```
 
-The return value is a boolean. You should return `True` if the brackets are properly matched and nested, otherwise `False`. 
+The return value is a boolean. You should return `True` if the brackets are properly matched and nested, otherwise `False`.
 
 **HINT**
 
