@@ -1,4 +1,5 @@
-
+# Ian's homework
+# Bracket matcher
 
 open_brackets = ["[","{","("]
 closed_brackets = ["]","}",")"]
@@ -22,14 +23,28 @@ def bracket_matcher(input_str):
         return "bad code"
   
   
+print(bracket_matcher('a[b]c(123'))
 
-string = "abc(123)"
-print(string,"-", bracket_matcher(string))
+print(bracket_matcher('a[bc(123)]'))
+# # returns true
+#
+print(bracket_matcher('a[bc(12]3)'))
+# # returns false -- improperly nested
+
+print(bracket_matcher(''))
+# # returns true
+
+print(bracket_matcher('a{b}{c(1}[2]3)'))
+# # returns false -- improperly nested
+
+
+
+
+# string = "abc(123)"
+# print(string,"-", bracket_matcher(string))
   
-string = "a[b]c(123"
-print(string,"-", bracket_matcher(string))
+# string = "a[b]c(123"
+# print(string,"-", bracket_matcher(string))
   
-string = "a{b}{c(1[2]3)}"
-print(string,"-",bracket_matcher(string))
-
-
+# string = "a{b}{c(1[2]3)}"
+# print(string,"-",bracket_matcher(string))
